@@ -5,9 +5,9 @@
     i18n_domain="burger.policy">
     
     <browser:page
-        for="zopyx.existdb.interfaces.IConnector"
+        for="zopyx.existdb.connector.IConnector"
         name="hello-world"
-        class=".hello.Hello"
+        class=".hello.HelloView"
         template="hello_world.pt"
         permission="cmf.ModifyPortalContent"
     />  
