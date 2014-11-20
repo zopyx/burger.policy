@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="burger.policy">
+    
+    <browser:page
+        for="zopyx.existdb.interfaces.IConnector"
+        name="hello-world"
+        class=".hello.Hello"
+        template="hello_world.pt"
+        permission="cmf.ModifyPortalContent"
+    />  
+    
+</configure>
