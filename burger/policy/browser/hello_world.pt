@@ -7,13 +7,18 @@
       i18n:domain="eteaching.policy">
 <body>
     <metal:slot fill-slot="content-core">
+
         <h1>Hello world</h1>
+
         <ul tal:define="result view/helper">
             <li tal:repeat="d result">
                 <span tal:content="d/key" /> = 
                 <span tal:content="d/value" />
             </li>
         </ul>
+
+        <pre tal:content="view/db_listing"/>
+
 
     </metal:slot>
 
