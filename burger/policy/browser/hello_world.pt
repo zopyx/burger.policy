@@ -19,11 +19,11 @@
 
         <pre tal:content="view/db_listing"/>
 
-        <table tal:define="rows view/db_listing">
+        <table class="listing" tal:define="rows view/db_listing">
             <tbody>
                 <tr tal:repeat="row rows">
-                    <td tal:content="python: row[0]">
-                    <td tal:content="python: row[1]">
+                    <td tal:content="python: row[0]" />
+                    <td tal:content="python: row[1]" />
                 </tr>
             </tbody>
         </table>
